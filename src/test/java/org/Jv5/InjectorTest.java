@@ -95,7 +95,6 @@ public class InjectorTest {
         SomeBeanWithoutInjection someBean = new SomeBeanWithoutInjection();
         SomeBeanWithoutInjection injectedBean = injector.inject(someBean);
 
-        // Используем рефлексию для получения значения поля
         Field field = SomeBeanWithoutInjection.class.getDeclaredField("field");
         field.setAccessible(true);
 

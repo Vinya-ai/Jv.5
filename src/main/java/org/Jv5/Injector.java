@@ -2,7 +2,7 @@ package org.Jv5;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.lang.reflect.Field;  // <-- добавьте этот импорт
+import java.lang.reflect.Field;
 import java.util.Properties;
 
 /**
