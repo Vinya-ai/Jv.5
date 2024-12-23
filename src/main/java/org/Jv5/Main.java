@@ -1,6 +1,19 @@
 package org.Jv5;
 
+/**
+ * Главный класс для демонстрации работы с инжектором зависимостей.
+ * Этот класс выполняет инжектирование зависимостей в объект {@link SomeBean} с использованием различных конфигурационных файлов.
+ */
 public class Main {
+
+    /**
+     * Основной метод программы.
+     * В этом методе выполняется внедрение зависимостей для двух конфигурационных файлов:
+     * {@code config_AC.properties} и {@code config_BC.properties}.
+     * Результаты внедрения зависимостей выводятся в консоль.
+     *
+     * @param args Аргументы командной строки (не используются в данном примере).
+     */
     public static void main(String[] args) {
         String configFileAC = "config_AC.properties";
         String configFileBC = "config_BC.properties";
@@ -25,7 +38,6 @@ public class Main {
             System.out.println("Не удалось внедрить зависимости для BC.");
         }
 
-        // Вывод информации о внедрении зависимостей после основного вывода
         System.out.println("\nИнформация о внедрении зависимостей для AC:");
         injectorAC.printInjectionDetails();
 
@@ -33,4 +45,3 @@ public class Main {
         injectorBC.printInjectionDetails();
     }
 }
-
